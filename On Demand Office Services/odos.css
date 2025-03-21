@@ -1,0 +1,358 @@
+/*all pages*/
+* {
+  margin: 0;
+}
+
+/* * {
+  outline: 1px solid rgba(255, 0, 0, 0.1);
+} */
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+img {
+    width: auto;
+    height: 15vh;
+}
+
+header {
+  background-color: #84b067;
+  min-height: 15vh;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1em;
+  flex-wrap: wrap;
+}
+
+header.home nav a:hover {
+  text-decoration: underline;
+}
+
+header.home nav {
+    position: relative;
+    z-index: 2;
+    /* pointer-events:auto; */
+}
+
+h1 {   
+  flex-grow: 1;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  margin: 0 1em;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a:link {
+  color: white;
+}
+h1 a:visited {
+  color: white;
+}
+h1 a:hover {
+  color: white;
+}
+
+nav {
+    z-index: 2;
+    padding-right: 5%;
+    margin-left: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* background-color: rgb(72, 128, 100); */
+    width: auto; /* Add this */
+}
+
+nav ul {
+    position: relative;
+    display: table;
+    width: 100%;
+    z-index: 2;
+}
+
+nav li {
+    position: relative;
+    display: table-cell;
+    /* border: 2px solid #cccccc; */
+    width: 16%;
+    z-index: 2;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: larger;
+    padding: 8px;
+    display: block;
+    z-index: 2;
+}
+nav a:link {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+nav a:hover {
+  color: #cccccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+/*index page*/
+#introcontainer {
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  margin-bottom: 3vh;
+}
+
+#intro {
+  width: 50%;
+  text-align: center;
+  font-size: larger;
+  padding-top: 70px;
+  float: left;
+  padding-left: 50px;
+}
+
+#intropic {
+  float: right;
+  background-image: url(./Vista\ Logos-2/lono-png.png);
+  width: 35%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.row {
+  text-align: center;
+  width: 65%;
+  margin-bottom: 7vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#featurepic {
+  background-image: url(Picture1.jpg);
+  height: 332px;
+  width: 351px;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
+
+#featurepic2 {
+  background-image: url(Picture2.jpg);
+  height: 340px;
+  width: 335px;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+}
+
+.testi {
+  font-size: larger;
+  display: block;
+  text-align: center;
+  border: 2px solid #000000;
+  padding: 5px;
+  background-color: rgba(0, 128, 0, 0.767);
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.name {
+  text-decoration: underline;
+  font-size: large;
+}
+
+#review {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#reviews {
+  float: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*clothing/toy/accessories pages*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.item p {
+  font-size: 1em;
+  color: #555;
+}
+
+/*about page*/
+#about {
+  text-align: center;
+  font-size: larger;
+}
+
+/*contact page*/
+.form {
+  text-align: center;
+  margin-top: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  padding-left: 1rem;
+}
+
+form label {
+  color: green;
+}
+
+form input,
+form textarea,
+form select {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 10em;
+}
+
+/* all pages*/
+table {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.footer {
+  background-color: #84b067;
+  clear: both;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1.5em;
+  clear: both;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+#wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  div.logo {
+    width: 50%;
+    min-height: 100px;
+    aspect-ratio: 3;
+    height: auto; /* auto height will maintain aspect ratio */
+    margin-bottom: 1em;
+  }
+  h1 {
+    flex: none;
+    width: 100%;
+    font-size: 4vh;
+    margin-bottom: 1em;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #intro,
+  #intropic {
+    float: none;
+    width: 100%;
+  }
+  #grid {
+    display: inline;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    margin-top: 50px;
+  }
+}
