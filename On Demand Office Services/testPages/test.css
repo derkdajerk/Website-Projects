@@ -20,6 +20,7 @@ body {
 }
 
 .header-inner {
+  /* padding: 20px 20px; */
   display: flex;
   width: 100%;
   align-items: center;
@@ -33,6 +34,7 @@ body {
 }
 
 .overlay {
+  z-index: 90;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,7 +49,7 @@ body {
     0,
     0,
     0.45
-  ); /* Optional: Adds a slight dark overlay */
+  );
 }
 
 .company-name {
@@ -92,6 +94,8 @@ body {
 }
 
 .tagline {
+  z-index: 100;
+  padding: 20px 20px;
   width: 100%;
   align-items: center;
   text-align: center;
@@ -159,6 +163,333 @@ body {
   font-style: normal;
 }
 
+/* WHY CHOOSE US SECTION */
+.whyus_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('dunedin-sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+.whyus_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+
+.whychooseus {
+  padding: 5% 5%;
+  background: url('temp-bg.jpg') no-repeat center/cover;
+  color: #486237;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.whychooseus h2 {
+  margin-bottom: 2rem;
+  font-size: xxx-large;
+}
+.whychooseus-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+.whychooseus-item {
+  flex: 1 1 30%;
+  background-color: rgba(164, 218, 129, 0.34);
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #486237;
+  margin: 1%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.whychooseus-item img {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+}
+.whychooseus-text h3 {
+  margin: 0;
+  font-size: xx-large;
+}
+.whychooseus-text p {
+  margin: 0.5rem 0 0;
+  font-size: large;
+}
+
+/* OUR SERVICES SECTION */
+.ourservices_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('dunedin-fl-marina.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+.ourservices_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.ourservices {
+  padding: 5% 5%;
+  /* background: #84B067; */
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.ourservices h2 {
+  margin-bottom: 2rem;
+  font-size: xxx-large;
+}
+.ourservices-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2%;
+  margin-bottom: 4rem;
+}
+.service-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: .35em;
+}
+.service-item {
+  background: #65884E;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #fff;
+  font-size: large;
+}
+.cta-button {
+  background-color: #486237;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: large;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.cta-button a,
+.cta-button a:link,
+.cta-button a:visited,
+.cta-button a:hover {
+  text-decoration: none;
+  color: white;
+}
+.cta-button:hover {
+  background-color: #65884E;
+  transition-duration: 500ms;
+}
+
+/* WHO WE SERVE SECTION */
+.whoweserve {
+  padding: 5% 5%;
+  background: #A4DA81;
+  color: #486237;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.whoweserve h2 {
+  margin-bottom: 2rem;
+  font-size: xxx-large;
+}
+.whoweserve-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.whoweserve-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+.whoweserve-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.whoweserve-item p {
+  margin: 0;
+  font-size: large;
+}
+
+/* CLIENT BENEFITS SECTION */
+.clientbenefits {
+  padding: 5% 5%;
+  background: #84B067;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: left;
+}
+.clientbenefits h2 {
+  text-align: center;
+  font-size: xxx-large;
+  margin-bottom: 2rem;
+}
+.clientbenefits-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  align-items: center;
+}
+.benefits-text ul {
+  list-style: none;
+  font-size: large;
+  line-height: 1.6;
+}
+.benefits-text li {
+  margin-bottom: 1rem;
+}
+.benefits-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PRICING SECTION */
+.pricing {
+  padding: 5% 5%;
+  background: #65884E;
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.pricing h2 {
+  font-size: xxx-large;
+  margin-bottom: 1rem;
+}
+.pricing p {
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+  padding: 5% 5%;
+  background: #486237;
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.testimonials h2 {
+  font-size: xxx-large;
+  margin-bottom: 2rem;
+}
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-slide {
+  display: none;
+  font-size: large;
+  line-height: 1.6;
+}
+.testimonial-slide.active {
+  display: block;
+}
+.slider-prev,
+.slider-next {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 5% 5%;
+  background: #A4DA81;
+  color: #486237;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.contact h2 {
+  font-size: xxx-large;
+  margin-bottom: 2rem;
+}
+.contact-info p {
+  font-size: large;
+  margin: 0.5rem 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: large;
+  border: 1px solid #65884E;
+}
+.contact-form button {
+  align-self: center;
+}
+
+/* FOOTER */
+.footer {
+  padding: 2rem 5%;
+  background: #486237;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+.footer-contact p {
+  margin: 0.25rem 0;
+}
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: large;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .header {
@@ -176,6 +507,16 @@ body {
   }
   .tagline {
     font-size: x-large;
+  }
+  .whychooseus-container,
+  .ourservices-container,
+  .whoweserve-container,
+  .clientbenefits-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .clientbenefits-container {
+    grid-template-columns: 1fr;
   }
 }
 
