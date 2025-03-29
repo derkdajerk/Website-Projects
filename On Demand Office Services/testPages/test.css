@@ -270,15 +270,15 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2%;
-  margin-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .service-item img {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   margin-bottom: .35em;
 }
 .service-item {
-  background: #65884E;
+  background: rgba(156, 202, 125, 0.75);
   padding: 1rem;
   border: 1px solid black;
   border-radius: 40px;
@@ -286,7 +286,7 @@ body {
   font-size: large;
 }
 .cta-button {
-  background-color: #486237;
+  background-color: rgb(103, 134, 81);
   color: #fff;
   padding: 1rem 2rem;
   border: none;
@@ -308,9 +308,32 @@ body {
 }
 
 /* WHO WE SERVE SECTION */
+.whoweserve_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('edgewater_fenway-14.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+.whoweserve_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
 .whoweserve {
   padding: 5% 5%;
-  background: #A4DA81;
+  /* background: #A4DA81; */
   color: #486237;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
@@ -324,36 +347,59 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
 .whoweserve-item {
   display: flex;
+  border: 6px dotted #A4DA81;
   align-items: center;
   background: #fff;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2rem;
   margin: 0.5rem;
 }
 .whoweserve-item img {
-  width: 40px;
-  height: 40px;
-  margin-right: 0.5rem;
+  width: 64px;
+  height: 64px;
+  margin-right: 1.5rem;
 }
 .whoweserve-item p {
   margin: 0;
   font-size: large;
 }
+whoweserve button{
+  padding-bottom: 0;
+}
 
 /* CLIENT BENEFITS SECTION */
+.clientbenefits_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('golfcarts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 30%;
+  height: 20rem;
+}
+.clientbenefits_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
 .clientbenefits {
   padding: 5% 5%;
-  background: #84B067;
+  /* background: #84B067; */
   color: #fff;
   font-family: "Libre Franklin", sans-serif;
   text-align: left;
-}
-.clientbenefits h2 {
-  text-align: center;
-  font-size: xxx-large;
-  margin-bottom: 2rem;
 }
 .clientbenefits-container {
   display: grid;
@@ -362,12 +408,24 @@ body {
   align-items: center;
 }
 .benefits-text ul {
+  font-size: xx-large;
+  font-weight: 575;
   list-style: none;
-  font-size: large;
-  line-height: 1.6;
+  line-height: 4;
 }
 .benefits-text li {
+  border: 12px double lightgray;
   margin-bottom: 1rem;
+  text-align: center;
+  color: #118bd1;
+  text-shadow: 2px 2px 1px lightgray;
+}
+.benefits-text li img {
+  vertical-align: middle; 
+  height: 64px;
+  width: 64px;
+  margin-left: .5rem;
+  
 }
 .benefits-image img {
   width: 100%;
@@ -491,6 +549,14 @@ body {
 }
 
 /* Responsive Design */
+/* Medium size window*/
+@media (min-width: 769px) and (max-width: 867px) {
+  .company-name {
+    padding-top: 5vh;
+  }
+}
+
+/*Tiny window size*/
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -518,10 +584,10 @@ body {
   .clientbenefits-container {
     grid-template-columns: 1fr;
   }
+  .cta-button {
+    margin-top: 1.2rem;
+  }
+
 }
 
-@media (min-width: 769px) and (max-width: 867px) {
-  .company-name {
-    padding-top: 5vh;
-  }
-}
+
