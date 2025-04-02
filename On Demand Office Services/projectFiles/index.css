@@ -1,4 +1,3 @@
-@import "tailwindcss";
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +31,12 @@ body {
   width: 100%;
   height: auto; /* Keeps aspect ratio */
   display: block;
+}
+.header_services {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  display: block;
+  filter: brightness(.7);
 }
 
 .overlay {
@@ -124,30 +129,12 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size: x-large;
-  font-style: normal;
-}
-
-.about {
-  padding: 3% 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.about p {
-  font-family: "Libre Franklin", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-size: x-large;
-  line-height: 1.5;
+  font-size: xx-large;
   font-style: normal;
 }
 
 .intro {
-  padding: 5% 5%;
+  padding: 2% 5% 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +159,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('dunedin-sunset.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/dunedin-sunset.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -240,7 +227,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('dunedin-fl-marina.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/dunedin-fl-marina.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -258,8 +245,6 @@ body {
 }
 .ourservices {
   padding: 5% 5%;
-  /* background: #84B067; */
-  color: #fff;
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
 }
@@ -272,6 +257,25 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2%;
   padding-bottom: 2rem;
+}
+.services-page-container hr{
+  border: none;
+  height: 1px;
+  background-color: rgb(156, 202, 125);
+  margin-bottom: 2%;
+}
+.services-page-item {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  gap: 2%;
+  padding-bottom: 2rem;
+  color: black;
+}
+.service-label {
+
+}
+.service-desc {
+  
 }
 .service-item img {
   width: 64px;
@@ -316,7 +320,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('edgewater_fenway-14.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/edgewater_fenway-14.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -379,7 +383,7 @@ whoweserve button{
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('golfcarts.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/golfcarts.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 30%;
@@ -397,7 +401,6 @@ whoweserve button{
 }
 .clientbenefits {
   padding: 5% 5%;
-  /* background: #84B067; */
   color: #fff;
   font-family: "Libre Franklin", sans-serif;
   text-align: left;
@@ -442,7 +445,7 @@ whoweserve button{
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('trailbikes.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/trailbikes.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 45%;
@@ -489,7 +492,7 @@ whoweserve button{
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cityhall.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/cityhall.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 45%;
