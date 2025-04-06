@@ -587,7 +587,7 @@ whoweserve button{
 
 /* FOOTER */
 .footer {
-  padding: 2rem 5%;
+  padding-bottom: 1%;
   background: #486237;
   color: #fff;
   font-family: "Libre Franklin", sans-serif;
@@ -605,15 +605,10 @@ whoweserve button{
   color: #fff;
   font-size: large;
 }
-.footer-contact p {
-  margin: 0.25rem 0;
+.footer-contact {
+  padding-bottom: 1%;
 }
-.footer-social a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 0.5rem;
-  font-size: large;
-}
+
 
 /* Responsive Design */
 /* Medium size window*/
@@ -654,7 +649,12 @@ whoweserve button{
   .cta-button {
     margin-top: 1.2rem;
   }
-
+  .footer {
+    padding-bottom: 1rem;
+  }
+  .footer-contact {
+    padding-bottom: 1rem;
+  }
 }
 
 
