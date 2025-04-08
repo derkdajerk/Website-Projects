@@ -83,7 +83,7 @@ body {
   letter-spacing: 0.05em;
 }
 .nav a#nav-contact-button {
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(255, 0, 0);
   border: 2px solid rgb(32, 32, 32);
   border-radius: 50px;
 }

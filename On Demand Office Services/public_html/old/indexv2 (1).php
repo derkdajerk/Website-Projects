@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,8 +12,8 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <title>On Demand Office Services</title>
-    <link rel="stylesheet" href="indexv2.css" />
-    <link rel="icon" href="./images_webp/logo-png.webp" />
+    <link rel="stylesheet" href="index2.css" />
+    <link rel="icon" href="./images/logo-png.png" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
@@ -18,11 +23,11 @@
       <div class="overlay">
         <div class="header-inner">
           <h1 class="company-name">
-            <a href="/">On Demand Office Services Inc</a>
+            <a href="index.html">On Demand Office Services Inc</a>
           </h1>
           <nav class="nav">
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <!-- <li><a href="services.html">Services</a></li> -->
               <!-- <li><a href="about.html">About</a></li> -->
               <li><a id="nav-contact-button" href="#contact">Contact</a></li>
@@ -36,7 +41,7 @@
           </p>
         </div>
       </div>
-      <img src="./images_webp/dunedin-oranges.webp" alt="Header Background" />
+      <img src="./images/dunedin-oranges.jpg" alt="Header Background" />
     </header>
     <div class="tagline2">
       <p>
@@ -71,21 +76,21 @@
     <section class="whychooseus">
       <div class="whychooseus-container">
         <div class="whychooseus-item">
-          <img src="./images_webp/accuracy_icon.webp" alt="Accuracy Icon" />
+          <img src="./images/accuracy_icon.png" alt="Accuracy Icon" />
           <div class="whychooseus-text">
             <h3>Accurate &amp;<br>Up-to-Date Books</h3>
             <p>Make informed decisions with reliable records.</p>
           </div>
         </div>
         <div class="whychooseus-item">
-          <img src="./images_webp/customize_icon.webp" alt="Solutions Icon" />
+          <img src="./images/customize_icon.png" alt="Solutions Icon" />
           <div class="whychooseus-text">
             <h3>Custom-Tailored Solutions</h3>
             <p>Flexible services that scale with your business.</p>
           </div>
         </div>
         <div class="whychooseus-item">
-          <img src="./images_webp/tax_icon.webp" alt="Tax Ready Icon" />
+          <img src="./images/tax_icon.png" alt="Tax Ready Icon" />
           <div class="whychooseus-text">
             <h3>Tax-Ready Financials</h3>
             <p>Organized records for stress-free tax filing.</p>
@@ -103,23 +108,23 @@
     <section class="ourservices">
       <div class="ourservices-container">
         <div class="service-item">
-          <img src="./images_webp/payroll_icon.webp" alt="Payroll Assistance Icon" />
+          <img src="./images/payroll_icon.png" alt="Payroll Assistance Icon" />
           <p>Payroll Assistance</p>
         </div>
         <div class="service-item">
-          <img src="./images_webp/user.webp" alt="Tax Ready Icon" />
+          <img src="./images/user.png" alt="Tax Ready Icon" />
           <p>Managing Books with QuickBooks Online</p>
         </div>
         <div class="service-item">
-          <img src="./images_webp/budgeting.webp" alt="Tax Ready Icon" />
+          <img src="./images/budgeting.png" alt="Tax Ready Icon" />
           <p>Budgeting &amp; Cash Flow Management</p>
         </div>
         <div class="service-item">
-          <img src="./images_webp/budget.webp" alt="Tax Ready Icon" />
+          <img src="./images/budget.png" alt="Tax Ready Icon" />
           <p>Expense Tracking &amp; Reconciliation</p>
         </div>
         <div class="service-item">
-          <img src="./images_webp/tax_icon.webp" alt="Tax Ready Icon" />
+          <img src="./images/tax_icon.png" alt="Tax Ready Icon" />
           <p>Tax Preparation Support</p>
         </div>
       </div>
@@ -135,23 +140,23 @@
     <section class="whoweserve">
       <div class="whoweserve-container">
         <div class="whoweserve-item">
-          <img src="./images_webp/storefront.webp" alt="Retail Icon" />
+          <img src="./images/storefront.png" alt="Retail Icon" />
           <p>Retail &amp; E-commerce</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images_webp/professional-services.webp" alt="Professional Services Icon" />
+          <img src="./images/professional-services.png" alt="Professional Services Icon" />
           <p>Professional Services<br />(Lawyers, Therapists, etc.)</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images_webp/home.webp" alt="Home-Based Icon" />
+          <img src="./images/home.png" alt="Home-Based Icon" />
           <p>Home-Based &amp; Online Businesses</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images_webp/engineer.webp" alt="Contractors Icon" />
+          <img src="./images/engineer.png" alt="Contractors Icon" />
           <p>Contractors &amp; Tradespeople</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images_webp/room-service.webp" alt="Restaurants Icon" />
+          <img src="./images/room-service.png" alt="Restaurants Icon" />
           <p>Restaurants &amp; Hospitality</p>
         </div>
       </div>
@@ -175,7 +180,7 @@
           </ul>
         </div>
         <div class="benefits-image">
-          <img src="./images_webp/GettyImages-1357264500-1024x683.jpg" alt="Client Benefits Image" />
+          <img src="./images/GettyImages-1357264500-1024x683.jpg" alt="Client Benefits Image" />
         </div>
       </div>
     </section>
@@ -226,7 +231,7 @@
         <p>Phone: 727-669-7311</p>
       </div>
       <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="c3acbe1b-0984-4adb-b3b6-9742e9942003">
+        <input type="hidden" name="access_key" value="891019dc-f82b-4ca5-9776-2f5413b5a153">
         <input type="hidden" name="from_name" value="OnDemandOfficeServices">
         <input type="hidden" name="subject" value="New Message from Potential Client">
 
@@ -244,7 +249,7 @@
     <footer class="footer">
       <nav class="footer-nav">
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <!-- <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li> -->
           <li><a href="#contact">Contact</a></li>
@@ -271,6 +276,15 @@
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
       });
+      window.addEventListener('pageshow', function(event) {
+      // event.persisted is true if coming from bfcache
+      // navigation.type === 2 covers back/forward in some browsers
+      if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {window.location.reload();
+      if ('serviceWorker' in navigator) {navigator.serviceWorker.getRegistrations().then(regs => {regs.forEach(reg => reg.unregister());
+    });
+  }
+    }
+  });
     </script>
   </body>
 </html>

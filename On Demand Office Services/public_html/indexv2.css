@@ -1,0 +1,617 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.header-inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 10%;
+}
+.header img {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  display: block;
+}
+.header_services {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
+  display: block;
+  filter: brightness(.7);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.45
+  );
+}
+.company-name {
+  flex-grow: 1;
+  text-align: left;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.company-name a,
+.company-name a:link,
+.company-name a:visited,
+.company-name a:hover {
+  text-decoration: none;
+  color: white;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav ul li {
+  display: inline;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 8px 12px;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
+}
+.nav a#nav-contact-button {
+  background-color: rgba(32, 32, 32, .4);
+  border: 2px solid rgba(32, 32, 32, .1);
+  border-radius: 50px;
+}
+.nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.tagline {
+  padding: 20px 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+  margin-bottom: 8%;
+}
+
+/* Index Page */
+.tagline2 {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.tagline2 p {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: xx-large;
+  font-style: normal;
+}
+.intro {
+  padding: 2% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.intro p {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: x-large;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/* WHY CHOOSE US SECTION */
+.whyus_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/dunedin-sunset.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+.whyus_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.whychooseus {
+  padding: 2% 5%;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.whychooseus-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+.whychooseus-item {
+  flex: 1 1 30%;
+  background-color: rgba(164, 218, 129, 0.34);
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #486237;
+  margin: 1%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.whychooseus-item img {
+  width: 75px;
+  height: 75px;
+  margin-right: 1rem;
+}
+.whychooseus-text h3 {
+  margin: 0;
+  font-size: xx-large;
+}
+.whychooseus-text p {
+  margin: 0.5rem 0 0;
+  font-size: large;
+}
+
+/* OUR SERVICES SECTION */
+.ourservices_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/dunedin-fl-marina.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+.ourservices_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.ourservices {
+  padding: 2% 5%;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.ourservices-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2%;
+  padding-bottom: 2rem;
+}
+.service-item {
+  background: rgba(156, 202, 125, 0.75);
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 40px;
+  color: #fff;
+  font-size: large;
+}
+.service-item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: .35em;
+}
+.cta-button {
+  background-color: #486237;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: large;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.cta-button a,
+.cta-button a:link,
+.cta-button a:visited,
+.cta-button a:hover {
+  text-decoration: none;
+  color: white;
+}
+.cta-button:hover {
+  background-color: #3a5429;
+  transform: scale(1.05);
+}
+
+
+/* WHO WE SERVE SECTION */
+.whoweserve_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/edgewater_fenway-14.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+.whoweserve_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.whoweserve {
+  padding: 2% 5%;
+  color: #486237;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.whoweserve h2 {
+  margin-bottom: 2rem;
+  font-size: xxx-large;
+}
+.whoweserve-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.whoweserve-item {
+  display: flex;
+  border: 6px dotted #A4DA81;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  margin: 0.5rem;
+}
+.whoweserve-item img {
+  width: 64px;
+  height: 64px;
+  margin-right: 1.5rem;
+}
+.whoweserve-item p {
+  margin: 0;
+  font-size: large;
+}
+
+/* CLIENT BENEFITS SECTION */
+.clientbenefits_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/golfcarts.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 30%;
+  height: 20rem;
+}
+.clientbenefits_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.clientbenefits {
+  padding: 2% 5%;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: left;
+}
+.clientbenefits-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  align-items: center;
+}
+.benefits-text ul {
+  font-size: xx-large;
+  font-weight: 575;
+  list-style: none;
+  line-height: 4;
+}
+.benefits-text li {
+  border: 12px double lightgray;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #118bd1;
+  text-shadow: 2px 2px 1px lightgray;
+}
+.benefits-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* PRICING SECTION */
+.pricing_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/trailbikes.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 45%;
+  height: 20rem;
+}
+.pricing_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.pricing {
+  padding: 2% 5%;
+  text-align: center;
+}
+.pricing p {
+  color: #000000;
+  font-size: x-large;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/cityhall.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 45%;
+  height: 20rem;
+}
+.testimonials_header p {
+  padding: 5% 5%;
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: xxx-large;
+  color: white;
+}
+.testimonials {
+  padding: 2% 5%;
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #65884E, #486237);
+  border-radius: 30px;        /* a moderate curve for a button-like look */
+  width: 60%;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-slider:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+.testimonial-slide {
+  display: none;
+  font-size: large;
+  line-height: 1.6;
+}
+.testimonial-slide.active {
+  display: block;
+}
+.slider-prev,
+.slider-next {
+  background: gray;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 5% 5%;
+  background: #A4DA81;
+  color: #486237;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.contact h2 {
+  font-size: xxx-large;
+  margin-bottom: 2rem;
+}
+.contact-info p {
+  font-size: large;
+  margin: 0.5rem 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: large;
+  border: 1px solid #65884E;
+}
+.contact-form button {
+  align-self: center;
+}
+
+/* FOOTER */
+.footer {
+  padding-bottom: 1%;
+  background: #486237;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+.footer-contact {
+  padding-bottom: 1%;
+}
+
+
+/* Responsive Design */
+/* Medium size window*/
+@media (min-width: 769px) and (max-width: 867px) {
+  .company-name {
+    padding-top: 5vh;
+  }
+}
+
+/*Tiny window size*/
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .header-inner {
+    z-index: 1000;
+  }
+  .header-inner nav {
+    padding-top: 3rem;
+  }
+  .company-name {
+    font-size: medium;
+  }
+  .nav ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .tagline {
+    font-size: x-large;
+  }
+  .whychooseus-container,
+  .ourservices-container,
+  .whoweserve-container,
+  .clientbenefits-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .clientbenefits-container {
+    grid-template-columns: 1fr;
+  }
+  .ourservices-container {
+    padding-bottom: 4rem;
+  }
+  .whoweserve-container {
+    padding-bottom: 0%;
+  }
+  .benefits-text li{
+    line-height: 2;
+  }
+  .benefits-image {
+    padding-bottom: 4rem;
+  }
+  .pricing p{
+    padding-top: 2rem;
+    margin-bottom: 0;
+  }
+  .cta-button {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .footer {
+    padding-bottom: 1rem;
+  }
+  .footer-contact {
+    padding-bottom: 1rem;
+  }
+}
+
+
