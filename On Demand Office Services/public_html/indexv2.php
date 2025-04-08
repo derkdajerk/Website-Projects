@@ -13,7 +13,7 @@ header("Expires: 0");
     <meta http-equiv="Expires" content="0" />
     <title>On Demand Office Services</title>
     <link rel="stylesheet" href="index2.css" />
-    <link rel="icon" href="./images/logo-png.png" />
+    <link rel="icon" href="./images_webp/logo-png.webp" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
@@ -41,7 +41,7 @@ header("Expires: 0");
           </p>
         </div>
       </div>
-      <img src="./images/dunedin-oranges.jpg" alt="Header Background" />
+      <img src="./images_webp/dunedin-oranges.webp" alt="Header Background" />
     </header>
     <div class="tagline2">
       <p>
@@ -76,21 +76,21 @@ header("Expires: 0");
     <section class="whychooseus">
       <div class="whychooseus-container">
         <div class="whychooseus-item">
-          <img src="./images/accuracy_icon.png" alt="Accuracy Icon" />
+          <img src="./images_webp/accuracy_icon.webp" alt="Accuracy Icon" />
           <div class="whychooseus-text">
             <h3>Accurate &amp;<br>Up-to-Date Books</h3>
             <p>Make informed decisions with reliable records.</p>
           </div>
         </div>
         <div class="whychooseus-item">
-          <img src="./images/customize_icon.png" alt="Solutions Icon" />
+          <img src="./images_webp/customize_icon.webp" alt="Solutions Icon" />
           <div class="whychooseus-text">
             <h3>Custom-Tailored Solutions</h3>
             <p>Flexible services that scale with your business.</p>
           </div>
         </div>
         <div class="whychooseus-item">
-          <img src="./images/tax_icon.png" alt="Tax Ready Icon" />
+          <img src="./images_webp/tax_icon.webp" alt="Tax Ready Icon" />
           <div class="whychooseus-text">
             <h3>Tax-Ready Financials</h3>
             <p>Organized records for stress-free tax filing.</p>
@@ -108,23 +108,23 @@ header("Expires: 0");
     <section class="ourservices">
       <div class="ourservices-container">
         <div class="service-item">
-          <img src="./images/payroll_icon.png" alt="Payroll Assistance Icon" />
+          <img src="./images_webp/payroll_icon.webp" alt="Payroll Assistance Icon" />
           <p>Payroll Assistance</p>
         </div>
         <div class="service-item">
-          <img src="./images/user.png" alt="Tax Ready Icon" />
+          <img src="./images_webp/user.webp" alt="Tax Ready Icon" />
           <p>Managing Books with QuickBooks Online</p>
         </div>
         <div class="service-item">
-          <img src="./images/budgeting.png" alt="Tax Ready Icon" />
+          <img src="./images_webp/budgeting.webp" alt="Tax Ready Icon" />
           <p>Budgeting &amp; Cash Flow Management</p>
         </div>
         <div class="service-item">
-          <img src="./images/budget.png" alt="Tax Ready Icon" />
+          <img src="./images_webp/budget.webp" alt="Tax Ready Icon" />
           <p>Expense Tracking &amp; Reconciliation</p>
         </div>
         <div class="service-item">
-          <img src="./images/tax_icon.png" alt="Tax Ready Icon" />
+          <img src="./images_webp/tax_icon.webp" alt="Tax Ready Icon" />
           <p>Tax Preparation Support</p>
         </div>
       </div>
@@ -140,23 +140,23 @@ header("Expires: 0");
     <section class="whoweserve">
       <div class="whoweserve-container">
         <div class="whoweserve-item">
-          <img src="./images/storefront.png" alt="Retail Icon" />
+          <img src="./images_webp/storefront.webp" alt="Retail Icon" />
           <p>Retail &amp; E-commerce</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images/professional-services.png" alt="Professional Services Icon" />
+          <img src="./images_webp/professional-services.webp" alt="Professional Services Icon" />
           <p>Professional Services<br />(Lawyers, Therapists, etc.)</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images/home.png" alt="Home-Based Icon" />
+          <img src="./images_webp/home.webp" alt="Home-Based Icon" />
           <p>Home-Based &amp; Online Businesses</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images/engineer.png" alt="Contractors Icon" />
+          <img src="./images_webp/engineer.webp" alt="Contractors Icon" />
           <p>Contractors &amp; Tradespeople</p>
         </div>
         <div class="whoweserve-item">
-          <img src="./images/room-service.png" alt="Restaurants Icon" />
+          <img src="./images_webp/room-service.webp" alt="Restaurants Icon" />
           <p>Restaurants &amp; Hospitality</p>
         </div>
       </div>
@@ -180,7 +180,7 @@ header("Expires: 0");
           </ul>
         </div>
         <div class="benefits-image">
-          <img src="./images/GettyImages-1357264500-1024x683.jpg" alt="Client Benefits Image" />
+          <img src="./images_webp/GettyImages-1357264500-1024x683.jpg" alt="Client Benefits Image" />
         </div>
       </div>
     </section>
@@ -276,15 +276,6 @@ header("Expires: 0");
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
       });
-      window.addEventListener('pageshow', function(event) {
-      // event.persisted is true if coming from bfcache
-      // navigation.type === 2 covers back/forward in some browsers
-      if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {window.location.reload();
-      if ('serviceWorker' in navigator) {navigator.serviceWorker.getRegistrations().then(regs => {regs.forEach(reg => reg.unregister());
-    });
-  }
-    }
-  });
     </script>
   </body>
 </html>

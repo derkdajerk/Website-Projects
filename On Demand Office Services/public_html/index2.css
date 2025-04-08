@@ -147,7 +147,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/dunedin-sunset.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/dunedin-sunset.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/dunedin-fl-marina.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/dunedin-fl-marina.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -281,7 +281,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/edgewater_fenway-14.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/edgewater_fenway-14.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -340,7 +340,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/golfcarts.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/golfcarts.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 30%;
@@ -395,7 +395,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/trailbikes.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/trailbikes.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 45%;
@@ -432,7 +432,7 @@ body {
   text-align: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/cityhall.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images_webp/cityhall.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom 45%;
